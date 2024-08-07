@@ -314,6 +314,7 @@ export interface CommonNativeWebViewProps extends ViewProps {
    * Append to the existing user-agent. Overridden if `userAgent` is set.
    */
   applicationNameForUserAgent?: string;
+  indicatorStyle?: string;
   basicAuthCredential?: BasicAuthCredential;
 }
 
@@ -533,6 +534,18 @@ export interface IOSWebViewProps extends WebViewSharedProps {
    * @platform ios
    */
   userAgent?: string;
+
+  /**
+   * The style of the scroll indicators.
+   *
+   * Possible values are:
+   * - `'black'`
+   * - `'white'`
+   * - `'default'`
+   *
+   * @platform ios
+   */
+  indicatorStyle?: string;
 
   /**
    * A Boolean value that determines whether pressing on a link

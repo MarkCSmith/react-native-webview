@@ -29,6 +29,16 @@ RCT_ENUM_CONVERTER(RNCWebViewPermissionGrantType, (@{
   @"prompt": @(RNCWebViewPermissionGrantType_Prompt),
 }), RNCWebViewPermissionGrantType_Prompt, integerValue)
 #endif
+
+RCT_ENUM_CONVERTER(
+    UIScrollViewIndicatorStyle,
+    (@{
+      @"default" : @(UIScrollViewIndicatorStyleDefault),
+      @"black" : @(UIScrollViewIndicatorStyleBlack),
+      @"white" : @(UIScrollViewIndicatorStyleWhite),
+    }),
+    UIScrollViewIndicatorStyleDefault,
+    integerValue)
 @end
 
 @implementation RNCWebViewManager
@@ -105,6 +115,8 @@ RCT_EXPORT_VIEW_PROPERTY(mediaCapturePermissionGrantType, RNCWebViewPermissionGr
 #if defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && __IPHONE_OS_VERSION_MAX_ALLOWED >= 130000 /* iOS 13 */
 RCT_EXPORT_VIEW_PROPERTY(fraudulentWebsiteWarningEnabled, BOOL)
 #endif
+
+RCT_EXPORT_VIEW_PROPERTY(indicatorStyle, UIScrollViewIndicatorStyle)
 
 /**
  * Expose methods to enable messaging the webview.
