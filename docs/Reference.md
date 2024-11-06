@@ -43,6 +43,7 @@ This document lays out the current public properties and methods for the React N
 - [`thirdPartyCookiesEnabled`](Reference.md#thirdpartycookiesenabled)
 - [`userAgent`](Reference.md#useragent)
 - [`applicationNameForUserAgent`](Reference.md#applicationNameForUserAgent)
+- [`indicatorStyle`](Reference.md#indicatorStyle)
 - [`allowsFullscreenVideo`](Reference.md#allowsfullscreenvideo)
 - [`allowsInlineMediaPlayback`](Reference.md#allowsinlinemediaplayback)
 - [`allowsPictureInPictureMediaPlayback`](Reference.md#allowsPictureInPictureMediaPlayback)
@@ -995,6 +996,24 @@ Append to the existing user-agent. Setting `userAgent` will override this.
 // Mozilla/5.0 (Linux; Android 8.1.0; Android SDK built for x86 Build/OSM1.180201.021; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Mobile Safari/537.36 DemoApp/1.1.0
 // Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 DemoApp/1.1.0
 ```
+
+---
+
+### `indicatorStyle`[⬆](#props-index)
+
+The style of the scroll indicators.
+
+Possible values for `indicatorStyle` are:
+- `black` - The scroll indicator is black (good against a light background).
+- `white` - The scroll indicator is white (good against a dark background).
+- `default` - Same as black.
+
+
+| Type   | Required | Platform |
+| ------ | -------- | ---------|
+| string | No       | iOS      |
+
+---
 
 ### `allowsFullscreenVideo`[⬆](#props-index)
 
