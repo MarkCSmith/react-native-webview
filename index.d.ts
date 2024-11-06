@@ -40,6 +40,12 @@ declare class WebView<P = {}> extends Component<WebViewProps & P> {
   requestFocus: () => void;
 
   /**
+    * (iOS only)
+    * Display the scroll indicators momentarily.
+    */
+  flashScrollIndicators: () => void;
+
+  /**
    * Posts a message to WebView.
    */
   postMessage: (message: string) => void;

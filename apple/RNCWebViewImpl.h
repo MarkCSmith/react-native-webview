@@ -143,6 +143,7 @@ shouldStartLoadForRequest:(NSMutableDictionary<NSString *, id> *)request
 - (void)reload;
 - (void)stopLoading;
 - (void)requestFocus;
+- (void)flashScrollIndicators;
 - (void)clearCache:(BOOL)includeDiskFiles;
 - (void)destroyWebView;
 #if !TARGET_OS_OSX

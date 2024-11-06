@@ -756,6 +756,10 @@ open class RNCWebViewManager : ViewGroupManager<RNCWebViewWrapper>(),
         view.requestFocus()
     }
 
+    override fun flashScrollIndicators(view: RNCWebViewWrapper) {
+      // iOS Only.
+    }
+
     override fun postMessage(view: RNCWebViewWrapper, data: String) {
         try {
             val eventInitDict = JSONObject()

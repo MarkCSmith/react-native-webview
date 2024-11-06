@@ -138,6 +138,8 @@ const WebViewComponent = forwardRef<unknown, IOSWebViewProps>(
         injectJavaScript: (data: string) =>
           webViewRef.current && Commands.injectJavaScript(webViewRef.current, data),
         requestFocus: () => webViewRef.current && Commands.requestFocus(webViewRef.current),
+        flashScrollIndicators: () =>
+          webViewRef.current && Commands.flashScrollIndicators(webViewRef.current),
         clearCache: (includeDiskFiles: boolean) =>
           webViewRef.current && Commands.clearCache(webViewRef.current, includeDiskFiles),
       }),
