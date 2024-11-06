@@ -106,6 +106,7 @@ This document lays out the current public properties and methods for the React N
 - [`clearCache`](Reference.md#clearCachebool)
 - [`clearHistory`](Reference.md#clearHistory)
 - [`requestFocus`](Reference.md#requestFocus)
+- [`flashScrollIndicators`](Reference.md#flashScrollIndicators)
 - [`postMessage`](Reference.md#postmessagestr)
 
 ---
@@ -1788,6 +1789,16 @@ requestFocus();
 ```
 
 Request the webView to ask for focus. (People working on TV apps might want having a look at this!)
+
+### `flashScrollIndicators()`[⬆](#methods-index)
+
+(iOS only)
+
+```javascript
+flashScrollIndicators();
+```
+
+Display the scroll indicators momentarily.
 
 ### `postMessage(str)`[⬆](#methods-index)
 
