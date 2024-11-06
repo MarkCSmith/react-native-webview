@@ -307,6 +307,7 @@ auto stringToOnLoadingFinishNavigationTypeEnum(std::string value) {
     REMAP_WEBVIEW_PROP(sharedCookiesEnabled)
     #if !TARGET_OS_OSX
     REMAP_WEBVIEW_PROP(decelerationRate)
+    REMAP_WEBVIEW_PROP(indicatorStyle)
     #endif // !TARGET_OS_OSX
     REMAP_WEBVIEW_PROP(directionalLockEnabled)
     REMAP_WEBVIEW_PROP(showsHorizontalScrollIndicator)

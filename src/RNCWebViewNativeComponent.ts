@@ -288,6 +288,7 @@ export interface NativeProps extends ViewProps {
     baseUrl?: string;
   }>;
   userAgent?: string;
+  indicatorStyle?: string;
   injectedJavaScriptObject?: string;
 }
 

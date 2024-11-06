@@ -528,6 +528,7 @@ RCTAutoInsetsProtocol>
     _webView.scrollView.showsHorizontalScrollIndicator = _showsHorizontalScrollIndicator;
     _webView.scrollView.showsVerticalScrollIndicator = _showsVerticalScrollIndicator;
     _webView.scrollView.directionalLockEnabled = _directionalLockEnabled;
+    _webView.scrollView.indicatorStyle = _indicatorStyle;
 #endif // !TARGET_OS_OSX
     _webView.allowsLinkPreview = _allowsLinkPreview;
     [_webView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionOld | NSKeyValueObservingOptionNew context:nil];
@@ -1010,6 +1011,14 @@ RCTAutoInsetsProtocol>
 {
   _userAgent = userAgent;
   _webView.customUserAgent = userAgent;
+}
+
+- (void)setIndicatorStyle:(UIScrollViewIndicatorStyle)indicatorStyle
+{
+  _indicatorStyle = indicatorStyle;
+#if !TARGET_OS_OSX
+  _webView.scrollView.indicatorStyle = indicatorStyle;
+#endif // !TARGET_OS_OSX
 }
 
 - (void)setScrollEnabled:(BOOL)scrollEnabled
