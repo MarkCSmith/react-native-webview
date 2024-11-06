@@ -36,7 +36,13 @@ declare class WebView<P = {}> extends Component<WebViewProps & P> {
      * Focuses on WebView redered page.
      */
     requestFocus: () => void;
-    
+
+    /**
+     * (iOS only)
+     * Display the scroll indicators momentarily.
+     */
+    flashScrollIndicators: () => void;
+
      /**
      * Posts a message to WebView.
      */
