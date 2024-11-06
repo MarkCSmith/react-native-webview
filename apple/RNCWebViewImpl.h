@@ -148,6 +148,7 @@ shouldStartLoadForRequest:(NSMutableDictionary<NSString *, id> *)request
 - (void)reload;
 - (void)stopLoading;
 - (void)requestFocus;
+- (void)flashScrollIndicators;
 - (void)clearCache:(BOOL)includeDiskFiles;
 #ifdef RCT_NEW_ARCH_ENABLED
 - (void)destroyWebView;

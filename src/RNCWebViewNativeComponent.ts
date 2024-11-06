@@ -307,6 +307,9 @@ export interface NativeCommands {
     javascript: string
   ) => void;
   requestFocus: (viewRef: React.ElementRef<HostComponent<NativeProps>>) => void;
+  // iOS Only
+  flashScrollIndicators: (viewRef: React.ElementRef<HostComponent<NativeProps>>) => void;
+  // !iOS Only
   postMessage: (
     viewRef: React.ElementRef<HostComponent<NativeProps>>,
     data: string
@@ -335,6 +338,7 @@ export const Commands = codegenNativeCommands<NativeCommands>({
     'stopLoading',
     'injectJavaScript',
     'requestFocus',
+    'flashScrollIndicators',
     'postMessage',
     'loadUrl',
     'clearFormData',

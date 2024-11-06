@@ -535,6 +535,10 @@ Class<RCTComponentViewProtocol> RNCWebViewCls(void)
     [_view requestFocus];
 }
 
+- (void)flashScrollIndicators {
+    [_view flashScrollIndicators];
+}
+
 - (void)stopLoading {
     [_view stopLoading];
 }
