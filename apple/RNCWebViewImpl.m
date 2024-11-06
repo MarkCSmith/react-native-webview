@@ -1640,6 +1640,13 @@ didFinishNavigation:(WKNavigation *)navigation
 #endif // !TARGET_OS_OSX
 }
 
+- (void)flashScrollIndicators
+{
+#if !TARGET_OS_OSX
+  [_webView.scrollView flashScrollIndicators];
+#endif // !TARGET_OS_OSX
+}
+
 - (void)clearCache:(BOOL)includeDiskFiles
 {
   NSMutableSet *dataTypes = [NSMutableSet setWithArray:@[
