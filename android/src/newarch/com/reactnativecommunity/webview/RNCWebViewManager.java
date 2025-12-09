@@ -467,6 +467,11 @@ public class RNCWebViewManager extends ViewGroupManager<RNCWebViewWrapper>
   }
 
   @Override
+  public void flashScrollIndicators(RNCWebViewWrapper view) {
+      // iOS Only.
+  }
+
+  @Override
   public void postMessage(RNCWebViewWrapper view, String data) {
       try {
         JSONObject eventInitDict = new JSONObject();
