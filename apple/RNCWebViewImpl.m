@@ -1022,6 +1022,12 @@ RCTAutoInsetsProtocol>
 }
 
 // UIScrollViewDelegate method
+- (BOOL)scrollViewShouldScrollToTop:(UIScrollView *)aScrollView
+{
+  return NO;
+}
+
+// UIScrollViewDelegate method
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
 {
   scrollView.decelerationRate = _decelerationRate;
